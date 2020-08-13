@@ -1,6 +1,7 @@
 #!/bin/bash
 
   setup() {
+    cp configuration/minio/variables.env.original configuration/minio/variables.env
     #TODO: organize default creds update if needed
     exit 0
   }
