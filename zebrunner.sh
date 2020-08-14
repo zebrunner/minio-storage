@@ -2,6 +2,10 @@
 
   setup() {
     cp configuration/minio/variables.env.original configuration/minio/variables.env
+
+    # add rwx permissions for everyone to be able to generate backup file from inside docker container
+    chmod a+rwx ./backup
+
     #TODO: organize default creds update if needed
     exit 0
   }
@@ -53,6 +57,9 @@
     fi
 
     cp configuration/minio/variables.env configuration/minio/variables.env.bak
+    source .env
+    docker run --rm --volumes-from minio -v $(pwd)/backup:/data/backup "ubuntu" tar -czvf /data/backup/minio.tar.gz /data/zebrunner
+
   }
 
   restore() {
@@ -61,6 +68,9 @@
     fi
 
     cp configuration/minio/variables.env.bak configuration/minio/variables.env
+    source .env
+    docker run --rm --volumes-from minio -v $(pwd)/backup:/data/backup "ubuntu" bash -c "cd / && tar -xzvf /data/backup/minio.tar.gz"
+
   }
 
   echo_warning() {
