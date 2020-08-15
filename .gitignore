@@ -1,2 +1,4 @@
 configuration/minio/variables.env
+*.bak
+*.tar.gz
 configuration/minio/variables.env.bak

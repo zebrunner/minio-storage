@@ -3,9 +3,6 @@
   setup() {
     cp configuration/minio/variables.env.original configuration/minio/variables.env
 
-    # add rwx permissions for everyone to be able to generate backup file from inside docker container
-    chmod a+rwx ./backup
-
     #TODO: organize default creds update if needed
     exit 0
   }
@@ -55,6 +52,9 @@
     if [[ -f .disabled ]]; then
       exit 0
     fi
+
+    # add rwx permissions for everyone to be able to generate backup file from inside docker container
+    chmod a+rwx ./backup
 
     cp configuration/minio/variables.env configuration/minio/variables.env.bak
     source .env
