@@ -54,9 +54,7 @@
     fi
 
     cp configuration/minio/variables.env configuration/minio/variables.env.bak
-    source .env
     docker run --rm --volumes-from minio -v $(pwd)/backup:/var/backup "ubuntu" tar -czvf /var/backup/minio.tar.gz /data
-
   }
 
   restore() {
@@ -65,9 +63,7 @@
     fi
 
     cp configuration/minio/variables.env.bak configuration/minio/variables.env
-    source .env
     docker run --rm --volumes-from minio -v $(pwd)/backup:/var/backup "ubuntu" bash -c "cd / && tar -xzvf /var/backup/minio.tar.gz"
-
   }
 
   echo_warning() {
@@ -75,6 +71,7 @@
       WARNING! $1"
 
   }
+
   echo_telegram() {
     echo "
       For more help join telegram channel: https://t.me/zebrunner
