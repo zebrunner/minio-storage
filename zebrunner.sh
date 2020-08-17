@@ -2,9 +2,8 @@
 
   setup() {
     cp configuration/minio/variables.env.original configuration/minio/variables.env
-
-    #TODO: organize default creds update if needed
-    exit 0
+    sed -i "s#MINIO_ACCESS_KEY=changeit#MINIO_ACCESS_KEY=${ZBR_ACCESS_KEY}#g" configuration/minio/variables.env.original
+    sed -i "s#MINIO_SECRET_KEY=changeit#MINIO_SECRET_KEY=${ZBR_SECRET_KEY}#g" configuration/minio/variables.env.original
   }
 
   shutdown() {
@@ -100,7 +99,7 @@ cd ${BASEDIR}
 
 case "$1" in
     setup)
-        if [[ ! -z $ZBR_PROTOCOL || ! -z $ZBR_HOSTNAME || ! -z $ZBR_PORT ]]; then
+        if [[ $ZBR_INSTALLER -eq 1 ]]; then
           setup
         else
           echo_warning "Setup procedure is supported only as part of Zebrunner Server (Community Edition)!"
