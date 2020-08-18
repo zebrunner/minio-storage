@@ -61,8 +61,10 @@
       exit 0
     fi
 
+    stop
     cp configuration/minio/variables.env.bak configuration/minio/variables.env
     docker run --rm --volumes-from minio -v $(pwd)/backup:/var/backup "ubuntu" bash -c "cd / && tar -xzvf /var/backup/minio.tar.gz"
+    down
   }
 
   echo_warning() {
