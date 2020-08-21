@@ -25,7 +25,7 @@ services:
       - "./configuration/minio/data:/zebrunner:ro"
     entrypoint: >
       /bin/sh -c "
-      /usr/bin/mc config host add minio-host http://minio:9000 changeit changeit --api s3v4;
+      /usr/bin/mc config host add minio-host http://minio:9000 zebrunner J33dNyeTDj --api s3v4;
       /usr/bin/mc mb --ignore-existing minio-host/zebrunner;
       /usr/bin/mc policy set download minio-host/zebrunner;
       /usr/bin/mc mirror -w --overwrite zebrunner minio-host/zebrunner;

@@ -1,9 +1,7 @@
 #!/bin/bash
 
   setup() {
-    cp configuration/minio/variables.env.original configuration/minio/variables.env
-    sed -i "s#MINIO_ACCESS_KEY=changeit#MINIO_ACCESS_KEY=${ZBR_STORAGE_ACCESS_KEY}#g" configuration/minio/variables.env
-    sed -i "s#MINIO_SECRET_KEY=changeit#MINIO_SECRET_KEY=${ZBR_STORAGE_SECRET_KEY}#g" configuration/minio/variables.env
+    echo "No setup steps required for minio"
   }
 
   shutdown() {
@@ -12,8 +10,6 @@
     fi
 
     docker-compose --env-file .env -f docker-compose.yml down -v
-
-    rm configuration/minio/variables.env
   }
 
   start() {
@@ -23,10 +19,6 @@
 
     # create infra network only if not exist
     docker network inspect infra >/dev/null 2>&1 || docker network create infra
-
-    if [[ ! -f configuration/minio/variables.env ]]; then
-      cp configuration/minio/variables.env.original configuration/minio/variables.env
-    fi
 
     docker-compose --env-file .env -f docker-compose.yml up -d
   }
@@ -52,7 +44,6 @@
       exit 0
     fi
 
-    cp configuration/minio/variables.env configuration/minio/variables.env.bak
     docker run --rm --volumes-from minio -v $(pwd)/backup:/var/backup "ubuntu" tar -czvf /var/backup/minio.tar.gz /data
   }
 
@@ -62,7 +53,6 @@
     fi
 
     stop
-    cp configuration/minio/variables.env.bak configuration/minio/variables.env
     docker run --rm --volumes-from minio -v $(pwd)/backup:/var/backup "ubuntu" bash -c "cd / && tar -xzvf /var/backup/minio.tar.gz"
     down
   }
