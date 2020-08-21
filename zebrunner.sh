@@ -1,7 +1,7 @@
 #!/bin/bash
 
   setup() {
-    echo "No setup steps required for minio"
+    echo "minio-stogare: no setup steps required."
   }
 
   shutdown() {
