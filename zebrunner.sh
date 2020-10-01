@@ -1,7 +1,7 @@
 #!/bin/bash
 
   setup() {
-    echo "minio-storage: no setup steps required."
+    echo
   }
 
   shutdown() {
