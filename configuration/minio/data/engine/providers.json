@@ -1,0 +1,40 @@
+{
+  "default": [
+    {
+      "name": "Zebrunner",
+      "id": "pr-zbr",
+      "icon": "https://zebrunner.com/favicon.png",
+      "configFile": "providers/zebrunner_provider.json"
+    },
+    {
+      "name": "Selenium",
+      "id": "pr-selenium",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png",
+      "configFile": "providers/selenium_provider.json"
+    },
+    {
+      "name": "MCloud",
+      "id": "pr-mcloud",
+      "icon": "https://mobiletesting.farm/images/tild6162-6632-4364-b437-646461393831__favicon_1.ico",
+      "configFile": "providers/mcloud_provider.json"
+    },
+    {
+      "name": "Aerokube",
+      "id": "pr-aerokube",
+      "icon": "https://browsers.aerokube.com/favicon-32x32.png",
+      "configFile": "providers/aerokube_provider.json"
+    },
+    {
+      "name": "Browserstack",
+      "id": "pr-brwsr",
+      "icon": "https://3fxtqy18kygf3on3bu39kh93-wpengine.netdna-ssl.com/wp-content/themes/browserstack/img/favicons/favicon.ico",
+      "configFile": "providers/browserstack_provider.json"
+    },
+    {
+      "name": "Saucelabs",
+      "id": "pr-saucelabs",
+      "icon": "https://wiki.saucelabs.com/s/en_US/7901/af536c7c6dffcc1d697b914b797aa7f2f306b4f8/43/_/favicon.ico",
+      "configFile": "providers/saucelabs_provider.json"
+    }
+  ]
+}

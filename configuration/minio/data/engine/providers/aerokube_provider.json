@@ -1,0 +1,33 @@
+{
+   "rootKey":"capabilities.platformName",
+   "data":{
+      "capabilities.platformName":[
+         {
+            "id":"pl-android",
+            "name":"Android",
+            "value":"Android",
+            "job":[
+               "android",
+               "android_web"
+            ]
+         },
+         {
+            "id":"pl-ios",
+            "name":"iOS",
+            "value":"iOS",
+            "job":[
+               "ios",
+               "ios_web"
+            ]
+         },
+         {
+            "id":"pl-web",
+            "name":"Web",
+            "value":"*",
+            "job":[
+               "web"
+            ]
+         }
+      ]
+   }
+}

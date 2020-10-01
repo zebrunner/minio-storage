@@ -1,0 +1,47 @@
+{
+   "tutorials":[
+      {
+         "route":"dashboard",
+         "steps":[
+            {
+               "order": 0,
+               "title":"Dashboards & Widgets",
+               "description":"We will walk through the basic functionality of dashboards and widgets: create and modify dashboards and widgets, change placement and size, send dashboards by email.",
+               "type":"video",
+               "youtubeId":"BTohlp2lnOE"
+            }
+         ]
+      },
+      {
+         "route":"tests.runs",
+         "steps":[
+            {
+               "order":0,
+               "title":"Launching the tests",
+               "description":"We will walk through the basic functionality of test launchers: we will create new launchers manually and using the scanner, trigger new test runs and change configuration of existing launcher templates.",
+               "type":"video",
+               "youtubeId":"vMyq2p4_T-Y"
+            },
+            {
+               "order":1,
+               "title":"Test results analysis",
+               "description":"We will walk through the basic functionality of test results: filter test runs, create stored filters, analyze test results, mark known issues, view test logs and videos.",
+               "type":"video",
+               "youtubeId":"qMWk7hAT_Jo"
+            }
+         ]
+      },
+      {
+         "route":"tests.sessions",
+         "steps":[
+            {
+               "order":0,
+               "title":"Test sessions",
+               "description":"In this tutorial we are talking about the most simple and quick way of running your test automation and analyzing results.",
+               "type":"video",
+               "youtubeId":"TmIrx2VXK8c"
+            }
+         ]
+      }
+   ]
+}

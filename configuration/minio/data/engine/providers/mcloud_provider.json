@@ -1,0 +1,357 @@
+{
+   "rootKey":"capabilities.platformName",
+   "data":{
+      "capabilities.platformName":[
+         {
+            "id":"pl-android",
+            "name":"Android",
+            "value":"Android",
+            "job":[
+               "android"
+            ],
+            "child":{
+               "label":"platformVersion",
+               "key":"capabilities.platformVersion",
+               "type":"select",
+               "variants":[
+                  "pv-android-6.0.1",
+                  "pv-android-7.0",
+                  "pv-android-8.0",
+                  "pv-android-8.1",
+                  "pv-android-9",
+                  "pv-android-10"
+               ],
+               "default":"pv-android-10"
+            }
+         },
+         {
+            "id":"pl-ios",
+            "name":"iOS",
+            "value":"iOS",
+            "job":[
+               "ios"
+            ],
+            "child":{
+               "label":"platformVersion",
+               "key":"capabilities.platformVersion",
+               "type":"select",
+               "variants":[
+                  "pv-ios-13.3.1"
+               ],
+               "default":"pv-ios-13.3.1"
+            }
+         }
+      ],
+      "capabilities.platformVersion":[
+         {
+            "id":"pv-ios-13.3.1",
+            "name":"13.3.1",
+            "value":"13.3.1",
+            "child":{
+               "label":"device",
+               "key":"capabilities.device",
+               "type":"select",
+               "variants":[
+                  "dev-iphone6s",
+                  "dev-iphone7",
+                  "dev-iphone7-plus",
+                  "dev-iphone11",
+                  "dev-iphone11-pro",
+                  "dev-iphone8-plus"
+               ],
+               "default":"dev-iphone6s"
+            }
+         },
+         {
+            "id":"pv-android-10",
+            "name":"10",
+            "value":"10",
+            "child":{
+               "label":"device",
+               "key":"capabilities.device",
+               "type":"select",
+               "variants":[
+                  "dev-galaxy-a51-1"
+               ],
+               "default":"dev-galaxy-a51-1"
+            }
+         },
+         {
+            "id":"pv-android-9",
+            "name":"9",
+            "value":"9",
+            "child":{
+               "label":"device",
+               "key":"capabilities.device",
+               "type":"select",
+               "variants":[
+                  "dev-galaxy-a50-1",
+                  "dev-galaxy-s8-plus",
+                  "dev-galaxy-j7",
+                  "dev-galaxy-a40-2",
+                  "dev-galaxy-a50-3",
+                  "dev-galaxy-a40-1",
+                  "dev-galaxy-a40-3",
+                  "dev-galaxy-a30-2",
+                  "dev-galaxy-s10-1",
+                  "dev-galaxy-a30-1",
+                  "dev-pixel-3-xl",
+                  "dev-pixel-2",
+                  "dev-huawei-p-smart",
+                  "dev-oneplus-a6010",
+                  "dev-oneplus-3t"
+               ],
+               "default":"dev-galaxy-a50-1"
+            }
+         },
+         {
+            "id":"pv-android-8.1",
+            "name":"8.1",
+            "value":"8.1",
+            "child":{
+               "label":"device",
+               "key":"capabilities.device",
+               "type":"select",
+               "variants":[
+                  "dev-honor-7a",
+                  "dev-galaxy-j5",
+                  "dev-galaxytab-a10"
+               ],
+               "default":"dev-honor-7a"
+            }
+         },
+         {
+            "id":"pv-android-8.0",
+            "name":"8.0",
+            "value":"8.0",
+            "child":{
+               "label":"device",
+               "key":"capabilities.device",
+               "type":"select",
+               "variants":[
+                  "dev-galaxy-a3",
+                  "dev-galaxy-a7",
+                  "dev-lg-g62",
+                  "dev-galaxy-s9",
+                  "dev-galaxy-s7-ed",
+                  "dev-galaxy-s7",
+                  "dev-lg-g6",
+                  "dev-sony-xperia-xa1"
+               ],
+               "default":"dev-galaxy-a3"
+            }
+         },
+         {
+            "id":"pv-android-7.0",
+            "name":"7.0",
+            "value":"7.0",
+            "child":{
+               "label":"device",
+               "key":"capabilities.device",
+               "type":"select",
+               "variants":[
+                  "dev-htc-u-ultra",
+                  "dev-galaxy-s6"
+               ],
+               "default":"dev-htc-u-ultra"
+            }
+         },
+         {
+            "id":"pv-android-6.0",
+            "name":"6.0",
+            "value":"6.0",
+            "child":{
+               "label":"device",
+               "key":"capabilities.device",
+               "type":"select",
+               "variants":[
+                  "dev-galaxy-note-4"
+               ],
+               "default":"dev-galaxy-note-4"
+            }
+         }
+      ],
+      "capabilities.device":[
+         {
+            "id":"dev-iphone6s",
+            "name":"iPhone 6S",
+            "value":"iPhone 6S"
+         },
+         {
+            "id":"dev-iphone7",
+            "name":"iPhone 7",
+            "value":"iPhone 7"
+         },
+         {
+            "id":"dev-iphone7-plus",
+            "name":"iPhone 7Plus",
+            "value":"iPhone 7Plus"
+         },
+         {
+            "id":"dev-iphone11",
+            "name":"iPhone 11",
+            "value":"iPhone 11"
+         },
+         {
+            "id":"dev-iphone11-pro",
+            "name":"iPhone 11 Pro",
+            "value":"iPhone 11 Pro"
+         },
+         {
+            "id":"dev-iphone8-plus",
+            "name":"iPhone 8Plus",
+            "value":"iPhone 8Plus"
+         },
+         {
+            "id":"dev-galaxy-a51-1",
+            "name":"Galaxy A51_1",
+            "value":"Galaxy A51_1"
+         },
+         {
+            "id":"dev-galaxy-a50-1",
+            "name":"Galaxy A50_1",
+            "value":"Galaxy A50_1"
+         },
+         {
+            "id":"dev-galaxy-s8-plus",
+            "name":"Galaxy S8 Plus",
+            "value":"Galaxy S8 Plus"
+         },
+         {
+            "id":"dev-galaxy-j7",
+            "name":"Galaxy J7",
+            "value":"Galaxy J7"
+         },
+         {
+            "id":"dev-galaxy-a40-2",
+            "name":"Samsung Galaxy A40_2",
+            "value":"Samsung Galaxy A40_2"
+         },
+         {
+            "id":"dev-galaxy-a50-3",
+            "name":"Samsung Galaxy A50_3",
+            "value":"Samsung Galaxy A50_3"
+         },
+         {
+            "id":"dev-galaxy-a40-1",
+            "name":"Samsung Galaxy A40_1",
+            "value":"Samsung Galaxy A40_1"
+         },
+         {
+            "id":"dev-galaxy-a40-3",
+            "name":"Samsung Galaxy A40_3",
+            "value":"Samsung Galaxy A40_3"
+         },
+         {
+            "id":"dev-galaxy-a30-2",
+            "name":"Samsung Galaxy A30_2",
+            "value":"Samsung Galaxy A30_2"
+         },
+         {
+            "id":"dev-galaxy-s10-1",
+            "name":"Samsung Galaxy S10_1",
+            "value":"Samsung Galaxy S10_1"
+         },
+         {
+            "id":"dev-galaxy-a30-1",
+            "name":"Samsung Galaxy A30_1",
+            "value":"Samsung Galaxy A30_1"
+         },
+         {
+            "id":"dev-pixel-3-xl",
+            "name":"Pixel 3XL",
+            "value":"Pixel 3XL"
+         },
+         {
+            "id":"dev-pixel-2",
+            "name":"Google Pixel 2",
+            "value":"Google Pixel 2"
+         },
+         {
+            "id":"dev-huawei-p-smart",
+            "name":"Huawei P Smart",
+            "value":"Huawei P Smart"
+         },
+         {
+            "id":"dev-oneplus-a6010",
+            "name":"Oneplus A6010",
+            "value":"Oneplus A6010"
+         },
+         {
+            "id":"dev-oneplus-3t",
+            "name":"Oneplus 3T",
+            "value":"Oneplus 3T"
+         },
+         {
+            "id":"dev-honor-7a",
+            "name":"Honor 7A",
+            "value":"Honor 7A"
+         },
+         {
+            "id":"dev-galaxy-j5",
+            "name":"Galaxy J5",
+            "value":"Galaxy J5"
+         },
+         {
+            "id":"dev-galaxytab-a10",
+            "name":"Galaxytab A10",
+            "value":"Galaxytab A10"
+         },
+         {
+            "id":"dev-galaxy-a3",
+            "name":"Samsung Galaxy A3",
+            "value":"Samsung Galaxy A3"
+         },
+         {
+            "id":"dev-galaxy-a7",
+            "name":"Samsung Galaxy A7",
+            "value":"Samsung Galaxy A7"
+         },
+         {
+            "id":"dev-lg-g62",
+            "name":"LG G62",
+            "value":"LG G62"
+         },
+         {
+            "id":"dev-galaxy-s9",
+            "name":"Samsung Galaxy S9",
+            "value":"Samsung Galaxy S9"
+         },
+         {
+            "id":"ev-galaxy-s7-ed",
+            "name":"Samsung Galaxy S7 ED",
+            "value":"Samsung Galaxy S7 ED"
+         },
+         {
+            "id":"dev-galaxy-s7",
+            "name":"Samsung Galaxy S7",
+            "value":"Samsung Galaxy S7"
+         },
+         {
+            "id":"dev-lg-g6",
+            "name":"LG G6",
+            "value":"LG G6"
+         },
+         {
+            "id":"dev-sony-xperia-xa1",
+            "name":"Sony Xperia XA1",
+            "value":"Sony Xperia XA1"
+         },
+         {
+            "id":"dev-htc-u-ultra",
+            "name":"HTC U Ultra",
+            "value":"HTC U Ultra"
+         },
+         {
+            "id":"dev-galaxy-s6",
+            "name":"Samsung Galaxy S6",
+            "value":"Samsung Galaxy S6"
+         },
+         {
+            "id":"dev-galaxy-note-4",
+            "name":"Samsung Galaxy Note 4",
+            "value":"Samsung Galaxy Note 4"
+         }
+      ]
+   }
+}

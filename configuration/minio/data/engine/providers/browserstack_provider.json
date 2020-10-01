@@ -1,0 +1,2241 @@
+{
+  "rootKey": "capabilities.platformName",
+  "data": {
+    "capabilities.platformName": [
+      {
+        "id": "pl-android",
+        "name": "Android",
+        "value": "Android",
+        "job": [
+          "android"
+        ],
+        "child": {
+          "label": "os_version",
+          "key": "capabilities.os_version",
+          "type": "select",
+          "variants": [
+            "osv-android-10.0",
+            "osv-android-9.0",
+            "osv-android-8.1",
+            "osv-android-8.0",
+            "osv-android-7.1",
+            "osv-android-7.0",
+            "osv-android-6.0",
+            "osv-android-5.0",
+            "osv-android-4.4"
+          ],
+          "default": "osv-android-10.0"
+        }
+      },
+      {
+        "id": "pl-ios",
+        "name": "iOS",
+        "value": "iOS",
+        "job": [
+          "ios"
+        ],
+        "child": {
+          "label": "os_version",
+          "key": "capabilities.os_version",
+          "type": "select",
+          "variants": [
+            "osv-ios-13",
+            "osv-ios-12",
+            "osv-ios-11",
+            "osv-ios-10"
+          ],
+          "default": "osv-ios-13"
+        }
+      },
+      {
+        "id": "pl-web",
+        "name": "Web",
+        "value": "*",
+        "job": [
+          "web"
+        ],
+        "child": {
+          "label": "os",
+          "key": "capabilities.os",
+          "type": "select",
+          "variants": [
+            "os-windows",
+            "os-os-x"
+          ],
+          "default": "os-windows"
+        }
+      }
+    ],
+    "capabilities.os": [
+      {
+        "id": "os-windows",
+        "name": "Windows",
+        "value": "Windows",
+        "job": [
+          "web"
+        ],
+        "child": {
+          "label": "os_version",
+          "key": "capabilities.os_version",
+          "type": "select",
+          "variants": [
+            "osv-windows-10",
+            "osv-windows-8.1",
+            "osv-windows-8",
+            "osv-windows-7",
+            "osv-windows-xp"
+          ],
+          "default": "osv-windows-10"
+        }
+      },
+      {
+        "id": "os-os-x",
+        "name": "OS X",
+        "value": "OS X",
+        "job": [
+          "os-x"
+        ],
+        "child": {
+          "label": "os_version",
+          "key": "capabilities.os_version",
+          "type": "select",
+          "variants": [
+            "osv-osx-catalina",
+            "osv-osx-mojave",
+            "osv-osx-high-sierra",
+            "osv-osx-sierra",
+            "osv-osx-el-capitan",
+            "osv-osx-yosemite",
+            "osv-osx-mavericks",
+            "osv-osx-mountain-lion",
+            "osv-osx-lion",
+            "osv-osx-snow-leopard"
+          ],
+          "default": "osv-osx-catalina"
+        }
+      }
+    ],
+    "capabilities.os_version": [
+      {
+        "id": "osv-ios-13",
+        "name": "13",
+        "value": "13",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-iphone-xs",
+            "dev-iphone8",
+            "dev-iphone11",
+            "dev-iphone11-promax",
+            "dev-iphone11-pro",
+            "dev-ipad-pro",
+            "dev-ipad-pro12.9-2018",
+            "dev-ipad7"
+          ],
+          "default": "dev-iphone-xs"
+        }
+      },
+      {
+        "id": "osv-ios-12",
+        "name": "12",
+        "value": "12",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-iphone-xs",
+            "dev-iphone-xsmax",
+            "dev-iphone-xr",
+            "dev-iphone8",
+            "dev-iphone8-plus",
+            "dev-iphone7",
+            "dev-iphone6s",
+            "dev-ipad-pro12.9-2018",
+            "dev-ipad-pro11-2018",
+            "dev-ipad-air-2019",
+            "dev-ipad-mini-2019"
+          ],
+          "default": "dev-iphone-xs"
+        }
+      },
+      {
+        "id": "osv-ios-11",
+        "name": "11",
+        "value": "11",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-iphone-x",
+            "dev-iphone8",
+            "dev-iphone8-plus",
+            "dev-iphone6",
+            "dev-iphone6s",
+            "dev-iphone6s-plus",
+            "dev-iphone-se",
+            "dev-ipad9.7-pro-2016",
+            "dev-ipad-pro12.9-2017",
+            "dev-ipad-mini4",
+            "dev-ipad6",
+            "dev-ipad5"
+          ],
+          "default": "dev-iphone-x"
+        }
+      },
+      {
+        "id": "osv-ios-10",
+        "name": "10",
+        "value": "10",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-iphone7",
+            "dev-iphone7-plus"
+          ],
+          "default": "dev-iphone7"
+        }
+      },
+      {
+        "id": "osv-android-10.0",
+        "name": "10.0",
+        "value": "10.0",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-oneplus-7t",
+            "dev-pixel-4xl",
+            "dev-pixel4",
+            "dev-pixel3"
+          ],
+          "default": "dev-oneplus-7t"
+        }
+      },
+      {
+        "id": "osv-android-9.0",
+        "name": "9.0",
+        "value": "9.0",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-s10-e",
+            "dev-galaxy-s10-plus",
+            "dev-galaxy-s10",
+            "dev-galaxy-note-10plus",
+            "dev-galaxy-note-10",
+            "dev-galaxy-a10",
+            "dev-galaxy-note-10plus",
+            "dev-galaxy-note-10",
+            "dev-galaxy-a10",
+            "dev-galaxy-s9-plus",
+            "dev-galaxy-s8-plus",
+            "dev-pixel-3a-xl",
+            "dev-pixel-3a",
+            "dev-pixel-3a-xl",
+            "dev-pixel-3",
+            "dev-pixel-2",
+            "dev-moto-g7-play",
+            "dev-pixel-2",
+            "dev-moto-g7-play",
+            "dev-oneplus-7",
+            "dev-oneplus-6t",
+            "dev-galaxytab-s6",
+            "dev-galaxytab-s5e"
+          ],
+          "default": "dev-galaxy-s10"
+        }
+      },
+      {
+        "id": "osv-android-8.1",
+        "name": "8.1",
+        "value": "8.1",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-note-9",
+            "dev-galaxy-j7-prime",
+            "dev-galaxytab-s4"
+          ],
+          "default": "dev-galaxy-note-9"
+        }
+      },
+      {
+        "id": "osv-android-8.0",
+        "name": "8.0",
+        "value": "8.0",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-s9-plus",
+            "dev-galaxy-s9",
+            "dev-pixel-2",
+            "dev-pixel",
+            "dev-galaxytab-s3"
+          ],
+          "default": "dev-galaxy-s9-plus"
+        }
+      },
+      {
+        "id": "osv-android-7.1",
+        "name": "7.1",
+        "value": "7.1",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-note-8",
+            "dev-galaxy-a8",
+            "pixel"
+          ],
+          "default": "dev-galaxy-note-8"
+        }
+      },
+      {
+        "id": "osv-android-7.0",
+        "name": "7.0",
+        "value": "7.0",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-s8-plus",
+            "dev-galaxy-s8",
+            "dev-galaxy-tab-s3"
+          ],
+          "default": "dev-galaxy-note-8"
+        }
+      },
+      {
+        "id": "osv-android-6.0",
+        "name": "6.0",
+        "value": "6.0",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-s7",
+            "dev-galaxy-note-3",
+            "dev-nexus-6",
+            "dev-moto-x-2nd-gen"
+          ],
+          "default": "dev-galaxy-s7"
+        }
+      },
+      {
+        "id": "osv-android-5.0",
+        "name": "5.0",
+        "value": "5.0",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-s6",
+            "dev-nexus-6",
+            "dev-moto-x-2nd-gen"
+          ],
+          "default": "dev-galaxy-s6"
+        }
+      },
+      {
+        "id": "osv-android-4.4",
+        "name": "4.4",
+        "value": "4.4",
+        "child": {
+          "label": "device",
+          "key": "capabilities.device",
+          "type": "select",
+          "variants": [
+            "dev-galaxy-note-4",
+            "dev-nexus-5",
+            "dev-galaxy-tab-4"
+          ],
+          "default": "dev-galaxy-note-4"
+        }
+      },
+      {
+        "id": "osv-windows-10",
+        "name": "10",
+        "value": "10",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-ie-windows-10",
+            "br-edge-windows-10",
+            "br-chrome-windows-10",
+            "br-firefox-windows-10"
+          ],
+          "default": "br-ie-windows-10"
+        }
+      },
+      {
+        "id": "osv-windows-8.1",
+        "name": "8.1",
+        "value": "8.1",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-ie-windows-8.1",
+            "br-edge-windows-8.1",
+            "br-chrome-windows-8.1",
+            "br-firefox-windows-8.1",
+            "br-opera-windows-8.1"
+          ],
+          "default": "br-ie-windows-8.1"
+        }
+      },
+      {
+        "id": "osv-windows-8",
+        "name": "8",
+        "value": "8",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-ie-windows-8",
+            "br-edge-windows-8",
+            "br-chrome-windows-8",
+            "br-firefox-windows-8",
+            "br-opera-windows-8"
+          ],
+          "default": "br-ie-windows-8"
+        }
+      },
+      {
+        "id": "osv-windows-7",
+        "name": "7",
+        "value": "7",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-ie-windows-7",
+            "br-edge-windows-7",
+            "br-chrome-windows-7",
+            "br-firefox-windows-7",
+            "br-opera-windows-7"
+          ],
+          "default": "br-ie-windows-7"
+        }
+      },
+      {
+        "id": "osv-windows-xp",
+        "name": "XP",
+        "value": "XP",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-ie-windows-xp",
+            "br-chrome-windows-xp",
+            "br-firefox-windows-xp",
+            "br-opera-windows-xp"
+          ],
+          "default": "br-ie-windows-xp"
+        }
+      },
+      {
+        "id": "osv-osx-catalina",
+        "name": "Catalina",
+        "value": "Catalina",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-catalina",
+            "br-chrome-osx-catalina",
+            "br-firefox-osx-catalina",
+            "br-edge-osx-catalina"
+          ],
+          "default": "br-safari-osx-catalina"
+        }
+      },
+      {
+        "id": "osv-osx-mojave",
+        "name": "Mojave",
+        "value": "Mojave",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-mojave",
+            "br-chrome-osx-mojave",
+            "br-firefox-osx-mojave",
+            "br-opera-osx-mojave"
+          ],
+          "default": "br-safari-osx-mojave"
+        }
+      },
+      {
+        "id": "osv-osx-high-sierra",
+        "name": "High Sierra",
+        "value": "High Sierra",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-high-sierra",
+            "br-chrome-osx-high-sierra",
+            "br-firefox-osx-high-sierra",
+            "br-opera-osx-high-sierra"
+          ],
+          "default": "br-safari-osx-high-sierra"
+        }
+      },
+      {
+        "id": "osv-osx-sierra",
+        "name": "Sierra",
+        "value": "Sierra",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-sierra",
+            "br-chrome-osx-sierra",
+            "br-firefox-osx-sierra",
+            "br-opera-osx-sierra"
+          ],
+          "default": "br-safari-osx-sierra"
+        }
+      },
+      {
+        "id": "osv-osx-el-capitan",
+        "name": "El Capitan",
+        "value": "El Capitan",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-el-capitan",
+            "br-chrome-osx-el-capitan",
+            "br-firefox-osx-el-capitan",
+            "br-opera-osx-el-capitan"
+          ],
+          "default": "br-safari-osx-el-capitan"
+        }
+      },
+      {
+        "id": "osv-osx-yosemite",
+        "name": "Yosemite",
+        "value": "Yosemite",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-yosemite",
+            "br-chrome-osx-yosemite",
+            "br-firefox-osx-yosemite",
+            "br-opera-osx-yosemite"
+          ],
+          "default": "br-safari-osx-yosemite"
+        }
+      },
+      {
+        "id": "osv-osx-mavericks",
+        "name": "Mavericks",
+        "value": "Mavericks",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-mavericks",
+            "br-chrome-osx-mavericks",
+            "br-firefox-osx-mavericks",
+            "br-opera-osx-mavericks"
+          ],
+          "default": "br-safari-osx-mavericks"
+        }
+      },
+      {
+        "id": "osv-osx-mountain-lion",
+        "name": "Mountain Lion",
+        "value": "Mountain Lion",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-mountain-lion",
+            "br-chrome-osx-mountain-lion",
+            "br-firefox-osx-mountain-lion",
+            "br-opera-osx-mountain-lion"
+          ],
+          "default": "br-safari-osx-mountain-lion"
+        }
+      },
+      {
+        "id": "osv-osx-lion",
+        "name": "Lion",
+        "value": "Lion",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-lion",
+            "br-chrome-osx-lion",
+            "br-firefox-osx-lion",
+            "br-opera-osx-lion"
+          ],
+          "default": "br-safari"
+        }
+      },
+      {
+        "id": "osv-osx-snow-leopard",
+        "name": "Snow Leopard",
+        "value": "Snow Leopard",
+        "child": {
+          "label": "browser",
+          "key": "capabilities.browser",
+          "type": "select",
+          "variants": [
+            "br-safari-osx-snow-leopard",
+            "br-chrome-osx-snow-leopard",
+            "br-firefox-osx-snow-leopard",
+            "br-opera-osx-snow-leopard"
+          ],
+          "default": "br-safari-osx-snow-leopard"
+        }
+      }
+    ],
+    "capabilities.device": [
+      {
+        "id": "dev-iphone11-promax",
+        "name": "iPhone 11 Pro Max",
+        "value": "iPhone 11 Pro Max"
+      },
+      {
+        "id": "dev-iphone11-pro",
+        "name": "iPhone 11 Pro",
+        "value": "iPhone 11 Pro"
+      },
+      {
+        "id": "dev-iphone11",
+        "name": "iPhone 11",
+        "value": "iPhone 11"
+      },
+      {
+        "id": "dev-iphone-xsmax",
+        "name": "iPhone XS Max",
+        "value": "iPhone XS Max"
+      },
+      {
+        "id": "dev-iphone-xs",
+        "name": "iPhone XS",
+        "value": "iPhone XS"
+      },
+      {
+        "id": "dev-iphone-xr",
+        "name": "iPhone XR",
+        "value": "iPhone XR"
+      },
+      {
+        "id": "dev-iphone8-plus",
+        "name": "iPhone 8 Plus",
+        "value": "iPhone 8 Plus"
+      },
+      {
+        "id": "dev-iphone8",
+        "name": "iPhone 8",
+        "value": "iPhone 8"
+      },
+      {
+        "id": "dev-iphone7",
+        "name": "iPhone 7",
+        "value": "iPhone 7"
+      },
+      {
+        "id": "dev-iphone7-plus",
+        "name": "iPhone 7 Plus",
+        "value": "iPhone 7 Plus"
+      },
+      {
+        "id": "dev-iphone6s-plus",
+        "name": "iPhone 6S Plus",
+        "value": "iPhone 6S Plus"
+      },
+      {
+        "id": "dev-iphone6s",
+        "name": "iPhone 6S",
+        "value": "iPhone 6S"
+      },
+      {
+        "id": "dev-iphone6",
+        "name": "iPhone 6",
+        "value": "iPhone 6"
+      },
+      {
+        "id": "dev-iphone-se",
+        "name": "iPhone SE",
+        "value": "iPhone SE"
+      },
+      {
+        "id": "dev-ipad-pro12.9-2018",
+        "name": "iPad Pro 12.9",
+        "value": "iPad Pro 12.9 2018"
+      },
+      {
+        "id": "dev-ipad7",
+        "name": "iPad 7th",
+        "value": "iPad 7th"
+      },
+      {
+        "id": "dev-ipad11-pro-2018",
+        "name": "iPad Pro 11 2018",
+        "value": "iPad Pro 11 2018"
+      },
+      {
+        "id": "dev-ipad-mini-2019",
+        "name": "iPad Mini 2019",
+        "value": "iPad Mini 2019"
+      },
+      {
+        "id": "dev-ipad-air-2019",
+        "name": "iPad Air 2019",
+        "value": "iPad Air 2019"
+      },
+      {
+        "id": "dev-ipad9.7-pro-2016",
+        "name": "iPad Pro 9.7 2016",
+        "value": "iPad Pro 9.7 2016"
+      },
+      {
+        "id": "dev-ipad12.9-pro-2017",
+        "name": "iPad Pro 12.9 2017",
+        "value": "iPad Pro 12.9 2017"
+      },
+      {
+        "id": "dev-ipad-mini4",
+        "name": "iPad Mini 4",
+        "value": "iPad Mini 4"
+      },
+      {
+        "id": "dev-ipad6",
+        "name": "iPad 6th",
+        "value": "iPad 6th"
+      },
+      {
+        "id": "dev-ipad5",
+        "name": "iPad 5th",
+        "value": "iPad 5th"
+      },
+      {
+        "id": "dev-oneplus-7t",
+        "name": "OnePlus 7T",
+        "value": "OnePlus 7T"
+      },
+      {
+        "id": "dev-pixel-4xl",
+        "name": "Google Pixel 4 XL",
+        "value": "Google Pixel 4 XL"
+      },
+      {
+        "id": "dev-pixel4",
+        "name": "Google Pixel 4",
+        "value": "Google Pixel 4"
+      },
+      {
+        "id": "dev-pixel3",
+        "name": "Google Pixel 3",
+        "value": "Google Pixel 3"
+      },
+      {
+        "id": "dev-galaxy-s9-plus",
+        "name": "Samsung Galaxy S9 Plus",
+        "value": "Samsung Galaxy S9 Plus"
+      },
+      {
+        "id": "dev-galaxy-s8-plus",
+        "name": "Samsung Galaxy S8 Plus",
+        "value": "Samsung Galaxy S8 Plus"
+      },
+      {
+        "id": "dev-galaxy-s10-e",
+        "name": "Samsung Galaxy S10e",
+        "value": "Samsung Galaxy S10e"
+      },
+      {
+        "id": "dev-galaxy-s10-plus",
+        "name": "Samsung Galaxy S10 Plus",
+        "value": "Samsung Galaxy S10 Plus"
+      },
+      {
+        "id": "dev-galaxy-s10",
+        "name": "Samsung Galaxy S10",
+        "value": "Samsung Galaxy S10"
+      },
+      {
+        "id": "dev-galaxy-note-10plus",
+        "name": "Samsung Galaxy Note 10 Plus",
+        "value": "Samsung Galaxy Note 10 Plus"
+      },
+      {
+        "id": "dev-galaxy-note-10",
+        "name": "Samsung Galaxy Note 10",
+        "value": "Samsung Galaxy Note 10"
+      },
+      {
+        "id": "dev-galaxy-a10",
+        "name": "Samsung Galaxy A10",
+        "value": "Samsung Galaxy A10"
+      },
+      {
+        "id": "dev-pixel-3a-xl",
+        "name": "Google Pixel 3a XL",
+        "value": "Google Pixel 3a XL"
+      },
+      {
+        "id": "dev-pixel-3a",
+        "name": "Google Pixel 3a",
+        "value": "Google Pixel 3a"
+      },
+      {
+        "id": "dev-pixel-3xl",
+        "name": "Google Pixel 3 XL",
+        "value": "Google Pixel 3 XL"
+      },
+      {
+        "id": "dev-pixel-3",
+        "name": "Google Pixel 3",
+        "value": "Google Pixel 3"
+      },
+      {
+        "id": "dev-pixel-2",
+        "name": "Google Pixel 2",
+        "value": "Google Pixel 2"
+      },
+      {
+        "id": "dev-moto-g7-play",
+        "name": "Motorola Moto G7 Play",
+        "value": "Motorola Moto G7 Play"
+      },
+      {
+        "id": "dev-oneplus-7",
+        "name": "OnePlus 7",
+        "value": "OnePlus 7"
+      },
+      {
+        "id": "dev-oneplus-6t",
+        "name": "OnePlus 6T",
+        "value": "OnePlus 6T"
+      },
+      {
+        "id": "dev-galaxytab-s6",
+        "name": "Samsung Galaxy Tab S6",
+        "value": "Samsung Galaxy Tab S6"
+      },
+      {
+        "id": "dev-galaxytab-s5e",
+        "name": "Samsung Galaxy Tab S5e",
+        "value": "Samsung Galaxy Tab S5e"
+      },
+      {
+        "id": "dev-galaxy-note-9",
+        "name": "Samsung Galaxy Note 9",
+        "value": "Samsung Galaxy Note 9"
+      },
+      {
+        "id": "dev-galaxy-j7-prime",
+        "name": "Samsung Galaxy J7 Prime",
+        "value": "Samsung Galaxy J7 Prime"
+      },
+      {
+        "id": "dev-galaxytab-s4",
+        "name": "Samsung Galaxy Tab S4",
+        "value": "Samsung Galaxy Tab S4"
+      },
+      {
+        "id": "dev-galaxy-s9",
+        "name": "Samsung Galaxy S9",
+        "value": "Samsung Galaxy S9"
+      },
+      {
+        "id": "dev-pixel-2",
+        "name": "Google Pixel 2",
+        "value": "Google Pixel 2"
+      },
+      {
+        "id": "dev-pixel",
+        "name": "Google Pixel",
+        "value": "Google Pixel"
+      },
+      {
+        "id": "dev-galaxytab-s3",
+        "name": "Samsung Galaxy Tab S3",
+        "value": "Samsung Galaxy Tab S3"
+      },
+      {
+        "id": "dev-galaxy-note-8",
+        "name": "Samsung Galaxy Note 8",
+        "value": "Samsung Galaxy Note 8"
+      },
+      {
+        "id": "dev-galaxy-a8",
+        "name": "Samsung Galaxy A8",
+        "value": "Samsung Galaxy A8"
+      },
+      {
+        "id": "dev-galaxy-s8",
+        "name": "Samsung Galaxy S8",
+        "value": "Samsung Galaxy S8"
+      },
+      {
+        "id": "dev-galaxy-note-3",
+        "name": "Samsung Galaxy Note 4",
+        "value": "Samsung Galaxy Note 4"
+      },
+      {
+        "id": "dev-galaxy-s7",
+        "name": "Samsung Galaxy S7",
+        "value": "Samsung Galaxy S7"
+      },
+      {
+        "id": "dev-nexus-6",
+        "name": "Google Nexus 6",
+        "value": "Google Nexus 6"
+      },
+      {
+        "id": "dev-moto-x-2nd-gen",
+        "name": "Motorola Moto X 2nd Gen",
+        "value": "Motorola Moto X 2nd Gen"
+      },
+      {
+        "id": "dev-galaxy-s6",
+        "name": "Samsung Galaxy S6",
+        "value": "Samsung Galaxy S6"
+      },
+      {
+        "id": "dev-nexus-5",
+        "name": "Google Nexus 5",
+        "value": "Google Nexus 5"
+      },
+      {
+        "id": "dev-galaxy-tab-4",
+        "name": "Samsung Galaxy Tab 4",
+        "value": "Samsung Galaxy Tab 4"
+      }
+    ],
+    "capabilities.browser": [
+      {
+        "id": "br-ie-windows-10",
+        "name": "IE",
+        "value": "IE",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "ie-11.0"
+          ],
+          "default": "ie-11.0"
+        }
+      },
+      {
+        "id": "br-ie-windows-8.1",
+        "name": "IE",
+        "value": "IE",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "ie-11.0"
+          ],
+          "default": "ie-11.0"
+        }
+      },
+      {
+        "id": "br-ie-windows-8.0",
+        "name": "IE",
+        "value": "IE",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "ie-10.0"
+          ],
+          "default": "ie-10.0"
+        }
+      },
+      {
+        "id": "br-ie-windows-7",
+        "name": "IE",
+        "value": "IE",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "ie-11.0",
+            "ie-10.0",
+            "ie-9.0",
+            "ie-8.0"
+          ],
+          "default": "ie-11.0"
+        }
+      },
+      {
+        "id": "br-ie-windows-xp",
+        "name": "IE",
+        "value": "IE",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "ie-7.0",
+            "ie-6.0"
+          ],
+          "default": "ie-7.0"
+        }
+      },
+      {
+        "id": "br-edge-windows-10",
+        "name": "Edge",
+        "value": "Edge",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "edge-81.0-beta",
+            "edge-80.0",
+            "edge-insider-preview",
+            "edge-18.0",
+            "edge-17.0"
+          ],
+          "default": "edge-81.0-beta"
+        }
+      },
+      {
+        "id": "br-edge-windows-8.1",
+        "name": "Edge",
+        "value": "Edge",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "edge-81.0-beta",
+            "edge-80.0"
+          ],
+          "default": "edge-81.0-beta"
+        }
+      },
+      {
+        "id": "br-edge-windows-8",
+        "name": "Edge",
+        "value": "Edge",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "edge-81.0-beta",
+            "edge-80.0"
+          ],
+          "default": "edge-81.0-beta"
+        }
+      },
+      {
+        "id": "br-edge-windows-7",
+        "name": "Edge",
+        "value": "Edge",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "edge-81.0-beta",
+            "edge-80.0"
+          ],
+          "default": "edge-81.0-beta"
+        }
+      },
+      {
+        "id": "br-edge-osx-catalina",
+        "name": "Edge",
+        "value": "Edge",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "edge-81.0-beta",
+            "edge-80.0"
+          ],
+          "default": "edge-81.0-beta"
+        }
+      },
+      {
+        "id": "br-chrome-windows-10",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-windows-8.1",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-windows-8",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-windows-7",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-windows-xp",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-49.0",
+            "chrome-48.0",
+            "chrome-47.0",
+            "chrome-46.0",
+            "chrome-45.0"
+          ],
+          "default": "chrome-49.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-catalina",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-mojave",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-high-sierra",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-sierra",
+        "name": "Chrome Siera",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-el-capitan",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-yosemite",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-81.0",
+            "chrome-80.0",
+            "chrome-79.0",
+            "chrome-78.0",
+            "chrome-77.0"
+          ],
+          "default": "chrome-81.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-mavericks",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-67.0",
+            "chrome-66.0",
+            "chrome-65.0",
+            "chrome-64.0",
+            "chrome-63.0"
+          ],
+          "default": "chrome-67.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-mountain-lion",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-49.0",
+            "chrome-48.0",
+            "chrome-47.0",
+            "chrome-45.0",
+            "chrome-44.0"
+          ],
+          "default": "chrome-49.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-lion",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-49.0",
+            "chrome-48.0",
+            "chrome-47.0",
+            "chrome-46.0",
+            "chrome-45.0"
+          ],
+          "default": "chrome-49.0"
+        }
+      },
+      {
+        "id": "br-chrome-osx-snow-leopard",
+        "name": "Chrome",
+        "value": "Chrome",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "chrome-49.0",
+            "chrome-48.0",
+            "chrome-47.0",
+            "chrome-46.0",
+            "chrome-45.0"
+          ],
+          "default": "chrome-49.0"
+        }
+      },
+      {
+        "id": "br-firefox-windows-10",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-windows-8.1",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-windows-8",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-windows-7",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-windows-xp",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-47.0",
+            "firefox-46.0",
+            "firefox-45.0",
+            "firefox-44.0",
+            "firefox-43.0"
+          ],
+          "default": "firefox-47.0"
+        }
+      },
+      {
+        "id": "br-firefox-osx-catalina",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-osx-mojave",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-osx-high-siera",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-osx-sierra",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-osx-el-capitan",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-osx-yosemite",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-osx-mavericks",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-75.0-beta",
+            "firefox-74.0",
+            "firefox-73.0",
+            "firefox-72.0",
+            "firefox-71.0"
+          ],
+          "default": "firefox-75.0-beta"
+        }
+      },
+      {
+        "id": "br-firefox-osx-mountain-lion",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-48.0",
+            "firefox-47.0",
+            "firefox-46.0",
+            "firefox-45.0",
+            "firefox-44.0"
+          ],
+          "default": "firefox-48.0"
+        }
+      },
+      {
+        "id": "br-firefox-osx-lion",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-43.0",
+            "firefox-42.0",
+            "firefox-41.0",
+            "firefox-40.0",
+            "firefox-38.0"
+          ],
+          "default": "firefox-43.0"
+        }
+      },
+      {
+        "id": "br-firefox-osx-snow-leopard",
+        "name": "Firefox",
+        "value": "Firefox",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "firefox-42.0",
+            "firefox-41.0",
+            "firefox-40.0",
+            "firefox-39.0",
+            "firefox-38.0"
+          ],
+          "default": "firefox-42.0"
+        }
+      },
+      {
+        "id": "br-opera-windows-8.1",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15",
+            "opera-12.16"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-windows-8",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15",
+            "opera-12.16"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-windows-7",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15",
+            "opera-12.16"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-windows-xp",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15",
+            "opera-12.16"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-mojave",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-high-siera",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-sierra",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-el-capitan",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-yosemite",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-mavericks",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-mountain-lion",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-lion",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-opera-osx-snow-leopard",
+        "name": "Opera",
+        "value": "Opera",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "opera-12.15"
+          ],
+          "default": "opera-12.15"
+        }
+      },
+      {
+        "id": "br-safari-osx-catalina",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-13.0"
+          ],
+          "default": "safari-13.0"
+        }
+      },
+      {
+        "id": "br-safari-osx-mojave",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-12.1"
+          ],
+          "default": "safari-12.1"
+        }
+      },
+      {
+        "id": "br-safari-osx-high-siera",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-11.1"
+          ],
+          "default": "safari-11.1"
+        }
+      },
+      {
+        "id": "br-safari-osx-sierra",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-10.1"
+          ],
+          "default": "safari-10.1"
+        }
+      },
+      {
+        "id": "br-safari-osx-el-capitan",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-9.1"
+          ],
+          "default": "safari-9.1"
+        }
+      },
+      {
+        "id": "br-safari-osx-yosemite",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-8.0"
+          ],
+          "default": "safari-8.0"
+        }
+      },
+      {
+        "id": "br-safari-osx-mavericks",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-7.1"
+          ],
+          "default": "safari-7.1"
+        }
+      },
+      {
+        "id": "br-safari-osx-mountain-lion",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-6.2"
+          ],
+          "default": "safari-6.2"
+        }
+      },
+      {
+        "id": "br-safari-osx-lion",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-6.0"
+          ],
+          "default": "safari-6.0"
+        }
+      },
+      {
+        "id": "br-safari-osx-snow-leopard",
+        "name": "Safari",
+        "value": "Safari",
+        "child": {
+          "label": "browser_version",
+          "key": "capabilities.browser_version",
+          "type": "select",
+          "variants": [
+            "safari-5.1"
+          ],
+          "default": "safari-5.1"
+        }
+      }
+    ],
+    "capabilities.browser_version": [
+      {
+        "id": "ie-11.0",
+        "name": "11.0",
+        "value": "11.0"
+      },
+      {
+        "id": "ie-10.0",
+        "name": "10.0",
+        "value": "10.0"
+      },
+      {
+        "id": "ie-9.0",
+        "name": "9.0",
+        "value": "9.0"
+      },
+      {
+        "id": "ie-8.0",
+        "name": "8.0",
+        "value": "8.0"
+      },
+      {
+        "id": "ie-7.0",
+        "name": "7.0",
+        "value": "7.0"
+      },
+      {
+        "id": "ie-6.0",
+        "name": "6.0",
+        "value": "6.0"
+      },
+      {
+        "id": "edge-81.0-beta",
+        "name": "81.0 beta",
+        "value": "81.0 beta"
+      },
+      {
+        "id": "edge-80.0",
+        "name": "80.0",
+        "value": "80.0"
+      },
+      {
+        "id": "edge-insider-preview",
+        "name": "insider preview",
+        "value": "insider preview"
+      },
+      {
+        "id": "edge-18.0",
+        "name": "18.0",
+        "value": "18.0"
+      },
+      {
+        "id": "edge-17.0",
+        "name": "17.0",
+        "value": "17.0"
+      },
+      {
+        "id": "chrome-81.0",
+        "name": "81.0",
+        "value": "81.0"
+      },
+      {
+        "id": "chrome-80.0",
+        "name": "80.0",
+        "value": "80.0"
+      },
+      {
+        "id": "chrome-79.0",
+        "name": "79.0",
+        "value": "79.0"
+      },
+      {
+        "id": "chrome-78.0",
+        "name": "78.0",
+        "value": "78.0"
+      },
+      {
+        "id": "chrome-77.0",
+        "name": "77.0",
+        "value": "7.0"
+      },
+      {
+        "id": "chrome-49.0",
+        "name": "49.0",
+        "value": "49.0"
+      },
+      {
+        "id": "chrome-48.0",
+        "name": "48.0",
+        "value": "48.0"
+      },
+      {
+        "id": "chrome-47.0",
+        "name": "47.0",
+        "value": "47.0"
+      },
+      {
+        "id": "chrome-46.0",
+        "name": "46.0",
+        "value": "46.0"
+      },
+      {
+        "id": "chrome-45.0",
+        "name": "45.0",
+        "value": "45.0"
+      },
+      {
+        "id": "chrome-67.0",
+        "name": "67.0",
+        "value": "67.0"
+      },
+      {
+        "id": "chrome-66.0",
+        "name": "66.0",
+        "value": "66.0"
+      },
+      {
+        "id": "chrome-65.0",
+        "name": "65.0",
+        "value": "65.0"
+      },
+      {
+        "id": "chrome-64.0",
+        "name": "64.0",
+        "value": "64.0"
+      },
+      {
+        "id": "chrome-63.0",
+        "name": "63.0",
+        "value": "63.0"
+      },
+      {
+        "id": "firefox-75.0-beta",
+        "name": "75.0-beta",
+        "value": "75.0-beta"
+      },
+      {
+        "id": "firefox-74.0",
+        "name": "74.0",
+        "value": "74.0"
+      },
+      {
+        "id": "firefox-73.0",
+        "name": "73.0",
+        "value": "73.0"
+      },
+      {
+        "id": "firefox-72.0",
+        "name": "72.0",
+        "value": "72.0"
+      },
+      {
+        "id": "firefox-71.0",
+        "name": "71.0",
+        "value": "71.0"
+      },
+      {
+        "id": "firefox-47.0",
+        "name": "47.0",
+        "value": "47.0"
+      },
+      {
+        "id": "firefox-46.0",
+        "name": "46.0",
+        "value": "46.0"
+      },
+      {
+        "id": "firefox-45.0",
+        "name": "45.0",
+        "value": "45.0"
+      },
+      {
+        "id": "firefox-44.0",
+        "name": "44.0",
+        "value": "44.0"
+      },
+      {
+        "id": "firefox-43.0",
+        "name": "43.0",
+        "value": "43.0"
+      },
+      {
+        "id": "firefox-48.0",
+        "name": "48.0",
+        "value": "48.0"
+      },
+      {
+        "id": "firefox-42.0",
+        "name": "42.0",
+        "value": "42.0"
+      },
+      {
+        "id": "firefox-41.0",
+        "name": "41.0",
+        "value": "41.0"
+      },
+      {
+        "id": "firefox-40.0",
+        "name": "40.0",
+        "value": "40.0"
+      },
+      {
+        "id": "firefox-38.0",
+        "name": "38.0",
+        "value": "38.0"
+      },
+      {
+        "id": "firefox-39.0",
+        "name": "39.0",
+        "value": "39.0"
+      },
+      {
+        "id": "opera-12.16",
+        "name": "12.16",
+        "value": "12.16"
+      },
+      {
+        "id": "opera-12.15",
+        "name": "12.15",
+        "value": "12.15"
+      },
+      {
+        "id": "safari-13.0",
+        "name": "13.0",
+        "value": "13.0"
+      },
+      {
+        "id": "safari-12.1",
+        "name": "12.1",
+        "value": "12.1"
+      },
+      {
+        "id": "safari-11.1",
+        "name": "11.1",
+        "value": "11.1"
+      },
+      {
+        "id": "safari-10.1",
+        "name": "10.1",
+        "value": "10.1"
+      },
+      {
+        "id": "safari-9.1",
+        "name": "9.1",
+        "value": "9.1"
+      },
+      {
+        "id": "safari-8.0",
+        "name": "8.0",
+        "value": "8.0"
+      },
+      {
+        "id": "safari-7.1",
+        "name": "Safari 7.1",
+        "value": "7.1"
+      },
+      {
+        "id": "safari-6.2",
+        "name": "6.2",
+        "value": "6.2"
+      },
+      {
+        "id": "safari-6.0",
+        "name": "6.0",
+        "value": "6.0"
+      },
+      {
+        "id": "safari-5.1",
+        "name": "5.1",
+        "value": "5.1"
+      }
+    ]
+  }
+}
