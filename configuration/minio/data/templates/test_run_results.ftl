@@ -78,7 +78,7 @@
                         <span style="color: #A7AEB3">${testRun.queued}</span>
                     </#if>
                     <#if workspaceURL?? && (workspaceURL != 'NULL') && (workspaceURL != '')>
-                        <a href="${workspaceURL}/tests/runs/${testRun.id?c}">Insights</a>
+                        <a href="${workspaceURL}/test-runs/${testRun.id?c}">Insights</a>
                     </#if>
                     <#if showJenkinsUrl && successRate?number != 100>
                         <span>
@@ -389,7 +389,7 @@
                                           line-height: 1.38;
                                           text-align: center;
                                           color: #ffffff;"
-                                   href="${workspaceURL}/tests/runs/${testRun.id?c}/info/${test.id?c}">Logs</a>
+                                   href="${workspaceURL}/test-runs/${testRun.id?c}/tests/${test.id?c}">Logs</a>
                             </#if>
                         </td>
                     </tr>
