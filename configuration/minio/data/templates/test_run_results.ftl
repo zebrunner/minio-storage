@@ -94,11 +94,7 @@
                 <#if testRun.config ?? && testRun.config.env ??>
                     <td style="color: #808a93;">Environment:</td>
                     <td style="font-weight: bold;color: #011627;">
-                        <#if testRun.config.url ??>
-                            <a href="${testRun.config.url}">${testRun.config.env}</a>
-                        <#else>
-                            ${testRun.config.env}
-                        </#if>
+                        ${testRun.config.env}
                     </td>
                 </#if>
             </tr>
@@ -153,17 +149,6 @@
                        vertical-align:top;">
                     <td style="color: #808a93">Elapsed:</td>
                     <td style="font-weight: bold;color: #011627;">${elapsed}</td>
-                </tr>
-            </#if>
-            <#if testRun.config ?? && testRun.config.language ?? && testRun.config.language != 'en_US'>
-                <tr style="font-size: 16px;
-                       line-height: 1.63;
-                       text-align: left;
-                       vertical-align:top;">
-                    <td style="color: #808a93">Language:</td>
-                    <td style="font-weight: bold;color: #011627;">
-                        ${testRun.config.language}
-                    </td>
                 </tr>
             </#if>
             <#if testRun.config ?? && testRun.config.locale ?? && testRun.config.locale != 'en_US'>
