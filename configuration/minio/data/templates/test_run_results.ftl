@@ -31,7 +31,7 @@
                 <#if testRun.status == 'ABORTED'>#828A92</#if>
                 <#if testRun.status == 'FAILED'>#ec4e5d</#if>
                 <#if testRun.status == 'SKIPPED'>#eab73d</#if>
-                        <#if testRun.status == 'QUEUED'>#A7AEB3</#if>">
+                        ">
                     ${testRun.status}
                 </td>
                 <td style="font-weight: bold;color: #011627;">
@@ -72,10 +72,6 @@
                     <#if (testRun.aborted > 0)>
                         <span>Aborted: </span>
                         <span style="color: #828A92">${testRun.aborted}</span>
-                    </#if>
-                    <#if (testRun.queued > 0)>
-                        <span>Queued: </span>
-                        <span style="color: #A7AEB3">${testRun.queued}</span>
                     </#if>
                     <#if workspaceURL?? && (workspaceURL != 'NULL') && (workspaceURL != '')>
                         <a href="${workspaceURL}/test-runs/${testRun.id?c}">Insights</a>
@@ -216,7 +212,7 @@
                         <#if test.knownIssue?? && test.knownIssue != true || test.blocker>#ec4e5d<#else>#BD4D50</#if>
                     </#if>
                     <#if test.status == 'SKIPPED'>#eab73d</#if>
-                            <#if test.status == 'QUEUED'>#A7AEB3</#if>">
+                            ">
                         <td style="font-size: 13px;
                             font-weight: bold;
                             line-height: 1.38;
