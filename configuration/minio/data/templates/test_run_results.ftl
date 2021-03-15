@@ -313,47 +313,21 @@
                             text-align: center;
                             color: #ffffff;">
                             <#list test.workItems as workItem>
-                                <#if workItem.type == 'BUG' && (jiraURL?contains('atlassian') || jiraURL?contains('jira'))>
+                                <#if jiraURL?contains('atlassian') || jiraURL?contains('jira')>
                                     <a style="font-size: 13px;
                                               font-weight: bold;
                                               line-height: 1.38;
                                               text-align: center;
-                                              color: #ffffff;"
-                                       href='${jiraURL}/browse/${workItem.jiraId}' target="_blank">
-                                        <#if workItem.blocker?? && workItem.blocker>
-                                            <span>BLOCKER<br/></span>
-                                        </#if>
+                                              color: #ffffff;" href='${jiraURL}/browse/${workItem.jiraId}' target="_blank">
                                         ${workItem.jiraId}
                                     </a>
-                                <#elseif workItem.type == 'BUG'>
-                                    <a style="font-size: 13px;
-                                              font-weight: bold;
-                                              line-height: 1.38;
-                                              text-align: center;
-                                              color: #ffffff;"
-                                       href='${jiraURL}/${workItem.jiraId}' target="_blank">
-                                        <#if workItem.blocker?? && workItem.blocker>
-                                            <span>BLOCKER<br/></span>
-                                        </#if>
-                                        ${workItem.jiraId}
-                                    </a>
-                                </#if>
-                                <#if workItem.type == 'TASK' && (jiraURL?contains('atlassian') || jiraURL?contains('jira'))>
-                                    <a style="font-size: 13px;
-                                              font-weight: bold;
-                                              line-height: 1.38;
-                                              text-align: center;
-                                              color: #ffffff;"
-                                       href='${jiraURL}/browse/${workItem.jiraId}' target="_blank">
-                                        ${workItem.jiraId}
-                                    </a>
-                                <#elseif workItem.type == 'TASK'>
+                                <#else>
                                     <a style="font-size: 13px;
                                        font-weight: bold;
                                        line-height: 1.38;
                                        text-align: center;
                                        color: #ffffff;"
-                                       href='${jiraURL}/${workItem.jiraId}' target="_blank">
+                                       color: #ffffff;" href='${jiraURL}/${workItem.jiraId}' target="_blank">
                                         ${workItem.jiraId}
                                     </a>
                                 </#if>
