@@ -45,7 +45,7 @@
       exit 0
     fi
 
-    docker run --rm --volumes-from minio -v $(pwd)/backup:/var/backup "ubuntu" tar -czvf /var/backup/minio.tar.gz /data
+    docker run --rm --volumes-from minio -v "$(pwd)"/backup:/var/backup "ubuntu" tar -czvf /var/backup/minio.tar.gz /data
   }
 
   restore() {
@@ -54,7 +54,7 @@
     fi
 
     stop
-    docker run --rm --volumes-from minio -v $(pwd)/backup:/var/backup "ubuntu" bash -c "cd / && tar -xzvf /var/backup/minio.tar.gz"
+    docker run --rm --volumes-from minio -v "$(pwd)"/backup:/var/backup "ubuntu" bash -c "cd / && tar -xzvf /var/backup/minio.tar.gz"
     down
   }
 
@@ -88,7 +88,7 @@
   }
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd ${BASEDIR}
+cd "${BASEDIR}" || exit
 
 case "$1" in
     setup)
