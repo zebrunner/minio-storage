@@ -61,10 +61,6 @@
                         <span>Known issue: </span>
                         <span style="color: #BD4D50">${testRun.failedAsKnown}</span>
                     </#if>
-                    <#if (testRun.failedAsBlocker > 0)>
-                        <span>Blockers: </span>
-                        <span style="color: #BD4D50">${testRun.failedAsBlocker}</span>
-                    </#if>
                     <#if (testRun.skipped > 0)>
                         <span>Skipped: </span>
                         <span style="color: #eab73d">${testRun.skipped}</span>
@@ -209,7 +205,7 @@
                     <#if test.status == 'PASSED'>#44c480</#if>
                     <#if test.status == 'ABORTED'>#828A92</#if>
                     <#if test.status == 'FAILED'>
-                        <#if test.knownIssue?? && test.knownIssue != true || test.blocker>#ec4e5d<#else>#BD4D50</#if>
+                        <#if test.knownIssue?? && test.knownIssue != true>#ec4e5d<#else>#BD4D50</#if>
                     </#if>
                     <#if test.status == 'SKIPPED'>#eab73d</#if>
                             ">
@@ -249,7 +245,7 @@
                                 </div>
                             </#if>
                             <#if test.status == 'FAILED' && test.message?? && test.message != ''>
-                                <#if test.knownIssue?? && test.knownIssue != true || test.blocker>
+                                <#if test.knownIssue?? && test.knownIssue != true>
                                     <pre style="background-color: #EBACB1;
                                                 font-family: Arial, serif;
                                                 font-size: 14px;
@@ -304,7 +300,7 @@
                                     <#else>
                                         ${test.message?trim}
                                     </#if>
-	            				</pre>
+                                </pre>
                             </#if>
                         </td>
                         <td style="font-size: 13px;
@@ -312,26 +308,27 @@
                             line-height: 1.38;
                             text-align: center;
                             color: #ffffff;">
-                            <#list test.workItems as workItem>
-                                <#if jiraURL?contains('atlassian') || jiraURL?contains('jira')>
-                                    <a style="font-size: 13px;
-                                              font-weight: bold;
-                                              line-height: 1.38;
-                                              text-align: center;
-                                              color: #ffffff;" href='${jiraURL}/browse/${workItem.jiraId}' target="_blank">
-                                        ${workItem.jiraId}
-                                    </a>
-                                <#else>
-                                    <a style="font-size: 13px;
-                                       font-weight: bold;
-                                       line-height: 1.38;
-                                       text-align: center;
-                                       color: #ffffff;"
-                                       color: #ffffff;" href='${jiraURL}/${workItem.jiraId}' target="_blank">
-                                        ${workItem.jiraId}
-                                    </a>
-                                </#if>
-                            </#list>
+                            <#if test.issueReferences?has_content>
+                                <#list test.issueReferences as issue>
+                                    <#if jiraURL?contains('atlassian') || jiraURL?contains('jira')>
+                                        <a style="font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 1.38;
+                                                  text-align: center;
+                                                  color: #ffffff;" href='${jiraURL}/browse/${issue.jiraId}' target="_blank">
+                                            ${issue.jiraId}
+                                        </a>
+                                    <#else>
+                                        <a style="font-size: 13px;
+                                                  font-weight: bold;
+                                                  line-height: 1.38;
+                                                  text-align: center;
+                                                  color: #ffffff;" href='${jiraURL}/${issue.jiraId}' target="_blank">
+                                            ${issue.jiraId}
+                                        </a>
+                                    </#if>
+                                </#list>
+                            </#if>
                         </td>
                         <td style="font-size: 13px;
                                    font-weight: bold;
