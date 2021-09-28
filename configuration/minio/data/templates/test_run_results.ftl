@@ -179,7 +179,7 @@
                        color: #011627;">
                 <th style="padding-left: 7px;width: 10%;">Result</th>
                 <th style="padding: 7px;width: 60%;">Test name</th>
-                <th style="padding-left: 7px;width: 10%;">Jira</th>
+                <th style="padding-left: 7px;width: 10%;">Issue</th>
                 <th style="padding-left: 7px;width: 10%;">Test info</th>
             </tr>
             <#assign testList = tests?sort_by("id")>
@@ -310,23 +310,13 @@
                             color: #ffffff;">
                             <#if test.issueReferences?has_content>
                                 <#list test.issueReferences as issue>
-                                    <#if jiraURL?contains('atlassian') || jiraURL?contains('jira')>
                                         <a style="font-size: 13px;
                                                   font-weight: bold;
                                                   line-height: 1.38;
                                                   text-align: center;
-                                                  color: #ffffff;" href='${jiraURL}/browse/${issue.jiraId}' target="_blank">
-                                            ${issue.jiraId}
+                                                  color: #ffffff;" href='${jiraURL}/browse/${issue.value}' target="_blank">
+                                            ${issue.value}
                                         </a>
-                                    <#else>
-                                        <a style="font-size: 13px;
-                                                  font-weight: bold;
-                                                  line-height: 1.38;
-                                                  text-align: center;
-                                                  color: #ffffff;" href='${jiraURL}/${issue.jiraId}' target="_blank">
-                                            ${issue.jiraId}
-                                        </a>
-                                    </#if>
                                 </#list>
                             </#if>
                         </td>
@@ -350,3 +340,4 @@
         </table>
     </div>
 </div>
+
