@@ -92,12 +92,7 @@ cd "${BASEDIR}" || exit
 
 case "$1" in
     setup)
-        if [[ $ZBR_INSTALLER -eq 1 ]]; then
-          setup
-        else
-          echo_warning "Setup procedure is supported only as part of Zebrunner Server (Community Edition)!"
-          echo_telegram
-        fi
+        setup
         ;;
     start)
 	start
